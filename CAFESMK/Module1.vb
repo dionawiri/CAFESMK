@@ -8,7 +8,7 @@ Module Module1
     Public rd As SqlDataReader
     Public mydb As String
     Sub Connection()
-        mydb = "Data source=DESKTOP-IF7V1AR\SQLEXPRESS; initial catalog=master-data_lks; integrated security=true"
+        mydb = "Data source=DESKTOP-IF7V1AR\SQLEXPRESS; initial catalog=CAFESMK; integrated security=true"
         conn = New SqlConnection(mydb)
         If conn.State = ConnectionState.Closed Then conn.Open()
     End Sub

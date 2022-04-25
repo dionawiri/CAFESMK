@@ -29,6 +29,7 @@ Partial Class FormLogin
         Me.Label3 = New System.Windows.Forms.Label()
         Me.BtnLogin = New System.Windows.Forms.Button()
         Me.BtnExit = New System.Windows.Forms.Button()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'TextUsername
@@ -76,7 +77,7 @@ Partial Class FormLogin
         'BtnLogin
         '
         Me.BtnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnLogin.Location = New System.Drawing.Point(232, 258)
+        Me.BtnLogin.Location = New System.Drawing.Point(232, 271)
         Me.BtnLogin.Name = "BtnLogin"
         Me.BtnLogin.Size = New System.Drawing.Size(75, 31)
         Me.BtnLogin.TabIndex = 5
@@ -86,18 +87,29 @@ Partial Class FormLogin
         'BtnExit
         '
         Me.BtnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnExit.Location = New System.Drawing.Point(321, 258)
+        Me.BtnExit.Location = New System.Drawing.Point(321, 271)
         Me.BtnExit.Name = "BtnExit"
         Me.BtnExit.Size = New System.Drawing.Size(75, 31)
         Me.BtnExit.TabIndex = 6
         Me.BtnExit.Text = "Exit"
         Me.BtnExit.UseVisualStyleBackColor = True
         '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(232, 243)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(108, 19)
+        Me.CheckBox1.TabIndex = 7
+        Me.CheckBox1.Text = "Show Password"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
         'FormLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(568, 450)
+        Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.BtnExit)
         Me.Controls.Add(Me.BtnLogin)
         Me.Controls.Add(Me.Label3)
@@ -120,4 +132,5 @@ Partial Class FormLogin
     Friend WithEvents Label3 As Label
     Friend WithEvents BtnLogin As Button
     Friend WithEvents BtnExit As Button
+    Friend WithEvents CheckBox1 As CheckBox
 End Class

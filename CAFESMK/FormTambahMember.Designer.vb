@@ -42,6 +42,7 @@ Partial Class FormTambahMember
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -234,11 +235,20 @@ Partial Class FormTambahMember
         Me.Button8.Text = "Cancel"
         Me.Button8.UseVisualStyleBackColor = True
         '
+        'TextBox4
+        '
+        Me.TextBox4.Enabled = False
+        Me.TextBox4.Location = New System.Drawing.Point(689, 125)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(99, 23)
+        Me.TextBox4.TabIndex = 43
+        '
         'FormTambahMember
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Label6)
@@ -282,4 +292,5 @@ Partial Class FormTambahMember
     Friend WithEvents Label6 As Label
     Friend WithEvents Button7 As Button
     Friend WithEvents Button8 As Button
+    Friend WithEvents TextBox4 As TextBox
 End Class

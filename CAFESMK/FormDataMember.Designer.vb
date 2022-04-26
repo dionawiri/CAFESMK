@@ -44,6 +44,9 @@ Partial Class FormDataMember
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Button11 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -239,6 +242,9 @@ Partial Class FormDataMember
         '
         'DataGridView1
         '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(276, 76)
         Me.DataGridView1.Name = "DataGridView1"
@@ -256,11 +262,42 @@ Partial Class FormDataMember
         Me.Button9.Text = "+ Tambah"
         Me.Button9.UseVisualStyleBackColor = True
         '
+        'Button10
+        '
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button10.Location = New System.Drawing.Point(575, 461)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(74, 29)
+        Me.Button10.TabIndex = 41
+        Me.Button10.Text = "Batal"
+        Me.Button10.UseVisualStyleBackColor = True
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Enabled = False
+        Me.TextBox4.Location = New System.Drawing.Point(749, 296)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(99, 23)
+        Me.TextBox4.TabIndex = 42
+        '
+        'Button11
+        '
+        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button11.Location = New System.Drawing.Point(671, 461)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(74, 29)
+        Me.Button11.TabIndex = 43
+        Me.Button11.Text = "Refresh"
+        Me.Button11.UseVisualStyleBackColor = True
+        '
         'FormDataMember
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(890, 566)
+        Me.Controls.Add(Me.Button11)
+        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button8)
@@ -308,4 +345,7 @@ Partial Class FormDataMember
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Button9 As Button
+    Friend WithEvents Button10 As Button
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents Button11 As Button
 End Class

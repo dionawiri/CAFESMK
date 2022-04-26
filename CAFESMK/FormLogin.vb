@@ -6,7 +6,12 @@ Public Class FormLogin
         TextUsername.Focus()
         TextPassword.PasswordChar = "*"
     End Sub
-
+    Private Sub FormLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Call start()
+        TextUsername.Text = ""
+        TextPassword.Text = ""
+        TextUsername.Focus()
+    End Sub
     Private Sub BtnLogin_Click(sender As Object, e As EventArgs) Handles BtnLogin.Click
         If TextUsername.Text = "" Or
            TextPassword.Text = "" Then
@@ -27,19 +32,20 @@ Public Class FormLogin
                 Me.Hide()
                 FormHalamanUtama.Show()
                 FormHalamanUtama.Label2.Text = "Selamat Datang, " & rd("nama")
+                Call start()
             ElseIf rd("jenis").ToString() = "kasir" Then
                 If MessageBox.Show("Login Berhasil", "Login Form", MessageBoxButtons.OK, MessageBoxIcon.Information) = DialogResult.OK Then
                 End If
                 Me.Hide()
                 FormHalamanUtamaKasir.Show()
                 FormHalamanUtamaKasir.Label2.Text = "Selamat Datang, " & rd("nama")
+                Call start()
             End If
+            Call start()
         End If
     End Sub
 
-    Private Sub FormLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Call start()
-    End Sub
+
 
     Private Sub TextPassword_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextPassword.KeyPress
         If e.KeyChar = Chr(13) Then
@@ -64,12 +70,14 @@ Public Class FormLogin
                     Me.Hide()
                     FormHalamanUtama.Show()
                     FormHalamanUtama.Label2.Text = "Selamat Datang, " & rd("nama")
+                    Call start()
                 ElseIf rd("jenis").ToString() = "kasir" Then
                     If MessageBox.Show("Login Berhasil", "Login Form", MessageBoxButtons.OK, MessageBoxIcon.Information) = DialogResult.OK Then
                     End If
                     Me.Hide()
                     FormHalamanUtamaKasir.Show()
                     FormHalamanUtamaKasir.Label2.Text = "Selamat Datang, " & rd("nama")
+                    Call start()
                 End If
             End If
         End If

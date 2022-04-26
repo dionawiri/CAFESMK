@@ -23,12 +23,12 @@ Partial Class FormHalamanUtama
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
@@ -48,45 +48,15 @@ Partial Class FormHalamanUtama
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
-        'Button1
+        'Button6
         '
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(0, 22)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(200, 52)
-        Me.Button1.TabIndex = 6
-        Me.Button1.Text = "Menu Cafe"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(0, 165)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(200, 52)
-        Me.Button2.TabIndex = 7
-        Me.Button2.Text = "Laporan"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Location = New System.Drawing.Point(0, 213)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(200, 52)
-        Me.Button3.TabIndex = 8
-        Me.Button3.Text = "Kelola Password"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Location = New System.Drawing.Point(0, 119)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(200, 52)
-        Me.Button4.TabIndex = 9
-        Me.Button4.Text = "Member"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Location = New System.Drawing.Point(0, 261)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(200, 52)
+        Me.Button6.TabIndex = 11
+        Me.Button6.Text = "Keluar"
+        Me.Button6.UseVisualStyleBackColor = True
         '
         'Button5
         '
@@ -98,15 +68,45 @@ Partial Class FormHalamanUtama
         Me.Button5.Text = "Pengguna"
         Me.Button5.UseVisualStyleBackColor = True
         '
-        'Button6
+        'Button4
         '
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Location = New System.Drawing.Point(0, 261)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(200, 52)
-        Me.Button6.TabIndex = 11
-        Me.Button6.Text = "Keluar"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Location = New System.Drawing.Point(0, 119)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(200, 52)
+        Me.Button4.TabIndex = 9
+        Me.Button4.Text = "Member"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Location = New System.Drawing.Point(0, 213)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(200, 52)
+        Me.Button3.TabIndex = 8
+        Me.Button3.Text = "Kelola Password"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Location = New System.Drawing.Point(0, 165)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(200, 52)
+        Me.Button2.TabIndex = 7
+        Me.Button2.Text = "Laporan"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(0, 22)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(200, 52)
+        Me.Button1.TabIndex = 6
+        Me.Button1.Text = "Menu Cafe"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Label1
         '

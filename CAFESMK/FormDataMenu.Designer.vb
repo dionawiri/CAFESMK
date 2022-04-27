@@ -42,9 +42,15 @@ Partial Class FormDataMenu
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button10 = New System.Windows.Forms.Button()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Button12 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button9
@@ -104,7 +110,7 @@ Partial Class FormDataMenu
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(200, 52)
         Me.Button6.TabIndex = 11
-        Me.Button6.Text = "Keluar"
+        Me.Button6.Text = " "
         Me.Button6.UseVisualStyleBackColor = True
         '
         'Button5
@@ -238,6 +244,24 @@ Partial Class FormDataMenu
         Me.GroupBox1.TabIndex = 57
         Me.GroupBox1.TabStop = False
         '
+        'Button11
+        '
+        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button11.Location = New System.Drawing.Point(572, 467)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(74, 29)
+        Me.Button11.TabIndex = 74
+        Me.Button11.Text = "Batal"
+        Me.Button11.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(713, 299)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(135, 134)
+        Me.PictureBox1.TabIndex = 75
+        Me.PictureBox1.TabStop = False
+        '
         'Button10
         '
         Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -248,11 +272,37 @@ Partial Class FormDataMenu
         Me.Button10.Text = "..."
         Me.Button10.UseVisualStyleBackColor = True
         '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Enabled = False
+        Me.TextBox4.Location = New System.Drawing.Point(774, 439)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(74, 23)
+        Me.TextBox4.TabIndex = 76
+        '
+        'Button12
+        '
+        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button12.Location = New System.Drawing.Point(664, 467)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(74, 29)
+        Me.Button12.TabIndex = 77
+        Me.Button12.Text = "Refresh"
+        Me.Button12.UseVisualStyleBackColor = True
+        '
         'FormDataMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(890, 531)
+        Me.Controls.Add(Me.Button12)
+        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Button11)
         Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.DataGridView1)
@@ -273,6 +323,7 @@ Partial Class FormDataMenu
         Me.Text = "FormDataMenu"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -298,5 +349,10 @@ Partial Class FormDataMenu
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button2 As Button
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Button11 As Button
+    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Button10 As Button
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents Button12 As Button
 End Class

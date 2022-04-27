@@ -46,6 +46,7 @@ Partial Class FormTambahPengguna
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -271,11 +272,19 @@ Partial Class FormTambahPengguna
         Me.TextBox5.Size = New System.Drawing.Size(170, 23)
         Me.TextBox5.TabIndex = 41
         '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(704, 131)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(84, 23)
+        Me.TextBox6.TabIndex = 43
+        '
         'FormTambahPengguna
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.Label7)
@@ -326,4 +335,5 @@ Partial Class FormTambahPengguna
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents TextBox6 As TextBox
 End Class

@@ -114,6 +114,7 @@ Public Class FormDataPengguna
         End If
     End Sub
 
+
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         If Button7.Text = "Ubah" Then
             Button7.Text = "Simpan"
@@ -136,6 +137,7 @@ Public Class FormDataPengguna
             Call empty()
         End If
     End Sub
+
 
     Private Sub FormDataPengguna_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call start()

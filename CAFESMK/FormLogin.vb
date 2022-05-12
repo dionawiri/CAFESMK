@@ -45,8 +45,6 @@ Public Class FormLogin
         End If
     End Sub
 
-
-
     Private Sub TextPassword_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextPassword.KeyPress
         If e.KeyChar = Chr(13) Then
             If TextUsername.Text = "" Or

@@ -91,6 +91,7 @@ Public Class FormTambahMember
         End If
     End Sub
 
+
     Private Sub FormTambahMember_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call start()
         Dim GID As String = "SELECT * FROM member WHERE id_member IN (SELECT MAX (id_member) FROM member)"

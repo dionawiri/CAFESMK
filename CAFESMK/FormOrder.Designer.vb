@@ -104,6 +104,7 @@ Partial Class FormOrder
         '
         'Button1
         '
+        Me.Button1.Enabled = False
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Location = New System.Drawing.Point(0, 22)
         Me.Button1.Name = "Button1"
